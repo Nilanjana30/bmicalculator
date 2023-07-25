@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="openwindow()">open Window</button>
+    <button onclick="closewindow()">close Window</button>
+    <script>
+        var mywindow;
+        function openwindow(){
+            mywindow = window.open("http://www.google.com", "_parent" );
+        }
+        function closewindow(){
+            mywindow.close();
+        }
+    </script>
+</body>
+</html>
